@@ -40,3 +40,8 @@ Cat & Cat::operator=(const Cat &assign)
 // 	return(this->type);
 // }
 
+Brain* Cat::getBrain()
+{
+	return (this->cerv);
+}
+

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gchauvot <gchauvot@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gautierchauvot <gautierchauvot@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 11:20:19 by gchauvot          #+#    #+#             */
-/*   Updated: 2025/02/19 14:16:18 by gchauvot         ###   ########.fr       */
+/*   Updated: 2025/02/19 17:44:42 by gautierchau      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ class Cat : public Animal
 		// //members
 		// void makeSound();
 		// const std::string getType()const;
-
+		Brain *getBrain();
 	private:
 		Brain *cerv;
 

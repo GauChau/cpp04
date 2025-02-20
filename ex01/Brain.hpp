@@ -16,9 +16,11 @@ class Brain
 
 		// Operators
 		Brain & operator=(const Brain &assign);
+		void setIdeas(unsigned int index, std::string content);
 
 	protected :
-		std::string ideas[100];
+		const static unsigned int _nbIdeas = 100;
+		std::string ideas[_nbIdeas];
 
 };
 

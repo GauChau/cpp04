@@ -27,3 +27,11 @@ Brain & Brain::operator=(const Brain &assign)
 	return *this;
 }
 
+void Brain::setIdeas(unsigned int index, std::string content)
+{
+	if (index <= this->_nbIdeas)
+	{
+		this->ideas[index] = content;
+	}
+}
+
