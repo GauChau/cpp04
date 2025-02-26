@@ -1,7 +1,7 @@
 #include "Cat.hpp"
 
 // Constructors
-Cat::Cat()
+Cat::Cat(): Animal()
 {
 	this->cerv = new Brain();
 	this->type = "Cat";

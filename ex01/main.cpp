@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gautierchauvot <gautierchauvot@student.    +#+  +:+       +#+        */
+/*   By: gchauvot <gchauvot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 11:20:22 by gchauvot          #+#    #+#             */
-/*   Updated: 2025/02/19 17:58:51 by gautierchau      ###   ########.fr       */
+/*   Updated: 2025/02/20 13:41:41 by gchauvot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int main()
 {
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
-	const Animal* p;
+	const Animal* p = new Dog();
 	const Animal* table[SAIZE];
 
 	for(int k=0; k < SAIZE; k++)
@@ -40,7 +40,6 @@ int main()
 	{
 		delete table[k];
 	}
-	p = i;
 
 	delete p;
 	delete j;//should not create a leak

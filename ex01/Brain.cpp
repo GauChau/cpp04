@@ -8,7 +8,8 @@ Brain::Brain()
 
 Brain::Brain(const Brain &copy)
 {
-	*this->ideas = *copy.ideas;
+	// *this->ideas = *copy.ideas;
+	*this = copy;
 	std::cout << "\e[0;33mCopy Constructor called of Brain\e[0m" << std::endl;
 }
 
@@ -23,15 +24,19 @@ Brain::~Brain()
 // Operators
 Brain & Brain::operator=(const Brain &assign)
 {
-	*this->ideas = *assign.ideas;
+	for(unsigned int i = 0; i < this->_nbIdeas; i++)
+	{
+		if (assign.ideas[i].length()>0)
+			this->ideas[i].assign(assign.ideas[i]);
+	}
 	return *this;
 }
 
 void Brain::setIdeas(unsigned int index, std::string content)
 {
-	if (index <= this->_nbIdeas)
+	if (index < this->_nbIdeas)
 	{
-		this->ideas[index] = content;
+		this->ideas[index].assign(content);
 	}
 }
 
