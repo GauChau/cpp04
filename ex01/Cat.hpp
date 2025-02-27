@@ -6,7 +6,7 @@
 /*   By: gautierchauvot <gautierchauvot@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 11:20:19 by gchauvot          #+#    #+#             */
-/*   Updated: 2025/02/19 17:44:42 by gautierchau      ###   ########.fr       */
+/*   Updated: 2025/02/27 15:52:17 by gautierchau      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ class Cat : public Animal
 		// //members
 		// void makeSound();
 		// const std::string getType()const;
-		Brain *getBrain();
+		Brain *getBrain()const;
 	private:
 		Brain *cerv;
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gchauvot <gchauvot@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gautierchauvot <gautierchauvot@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 11:20:14 by gchauvot          #+#    #+#             */
-/*   Updated: 2025/02/24 15:05:16 by gchauvot         ###   ########.fr       */
+/*   Updated: 2025/02/27 15:22:28 by gautierchau      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,9 @@
 class Animal
 {
 	private:
-		Animal();
 	public:
 		// Constructors
-		// Animal();
+		Animal();
 		Animal(const Animal &copy);
 
 		// Destructor

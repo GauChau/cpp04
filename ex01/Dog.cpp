@@ -26,7 +26,10 @@ Dog::~Dog()
 // Operators
 Dog & Dog::operator=(const Dog &assign)
 {
-	this->type = assign.type;
+	if(this != &assign)
+	{
+		this->cerv = new Brain(*assign.cerv);
+	}
 	return *this;
 }
 

@@ -10,7 +10,7 @@ Cat::Cat(): Animal()
 
 Cat::Cat(const Cat &copy)
 {
-	this->type = copy.type;
+	*this=copy;
 	std::cout << "\e[0;33mCopy Constructor called of Cat\e[0m" << std::endl;
 }
 
@@ -26,7 +26,10 @@ Cat::~Cat()
 // Operators
 Cat & Cat::operator=(const Cat &assign)
 {
-	this->type = assign.type;
+	if(this != &assign)
+	{
+		this->cerv = new Brain(*assign.cerv);
+	}
 	return *this;
 }
 
@@ -40,7 +43,7 @@ Cat & Cat::operator=(const Cat &assign)
 // 	return(this->type);
 // }
 
-Brain* Cat::getBrain()
+Brain* Cat::getBrain()const
 {
 	return (this->cerv);
 }
