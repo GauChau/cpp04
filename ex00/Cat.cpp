@@ -9,7 +9,7 @@ Cat::Cat()
 
 Cat::Cat(const Cat &copy)
 {
-	this->type = copy.type;
+	*this = copy;
 	std::cout << "\e[0;33mCopy Constructor called of Cat\e[0m" << std::endl;
 }
 

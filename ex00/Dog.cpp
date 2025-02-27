@@ -9,7 +9,8 @@ Dog::Dog()
 
 Dog::Dog(const Dog &copy)
 {
-	this->type = copy.type;
+	// this->type = copy.type;
+	*this = copy;
 	std::cout << "\e[0;33mCopy Constructor called of Dog\e[0m" << std::endl;
 }
 

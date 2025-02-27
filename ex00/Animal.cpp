@@ -9,7 +9,8 @@ Animal::Animal()
 
 Animal::Animal(const Animal &copy)
 {
-	this->type = copy.type;
+	// this->type = copy.type;
+	*this = copy;
 	std::cout << "\e[0;33mCopy Constructor called of Animal\e[0m" << std::endl;
 }
 
